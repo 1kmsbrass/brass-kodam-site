@@ -1,15 +1,15 @@
-baseURL = "https://www.yourdomain.com/"
+baseURL = "https://eea67171.brass-kodam-site.pages.dev/"
 languageCode = "en-in"
-title = "Brass & Copper Kodam Wholesale | Kumbabhishekam Suppliers"
+title = "Brass Kodam | Pithalai Kodam Wholesale Supplier"
 enableRobotsTXT = true
 
 [params]
   businessName = "KMS BRASS KODAM WHOLESALE"
-  tagline = "Wholesale Brass & Copper Kodam for Kumbabhishekam — Pan-India Delivery"
+  tagline = "Brass Kodam for Kumbabhishekam, Temples & Wholesale Orders"
   phone = "+91-9894055337"
   whatsapp = "919894055337"
   image = "/images/uploads/og-default.jpg"
-  description = "Wholesale manufacturer & supplier of brass and copper kodam, kalasam and kumbabhishekam items. Bulk orders shipped across India — temples, contractors, event organisers."
+  description = "Brass kodam and pithalai kudam supplier for Kumbabhishekam, temples, pooja and wholesale orders across India."
 
 [sitemap]
   changefreq = "weekly"
@@ -19,17 +19,17 @@ enableRobotsTXT = true
   unsafe = true
 
 [[menu.main]]
+  name = "Brass Kodam"
+  url = "/brass-kodam/"
+  weight = 5
+
+[[menu.main]]
   name = "Products"
   url = "/products/"
   weight = 10
 
 [[menu.main]]
-  name = "Where It's Used"
-  url = "/uses/"
-  weight = 15
-
-[[menu.main]]
-  name = "Kumbabhishekam Packages"
+  name = "Kumbabhishekam"
   url = "/kumbabhishekam-packages/"
   weight = 20
 
@@ -44,7 +44,7 @@ enableRobotsTXT = true
   weight = 30
 
 [[menu.main]]
-  name = "Blog"
+  name = "Guides"
   url = "/blog/"
   weight = 40
 
