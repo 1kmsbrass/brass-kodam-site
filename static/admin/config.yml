@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: 1kmsbrass/brass-kodam-site  # <-- change this
+  repo: 1kmsbrass/brass-kodam-site
   branch: main
-   base_url: https://a78656a5.brass-kodam-site.pages.dev
+  base_url: https://a78656a5.brass-kodam-site.pages.dev
   auth_endpoint: api/auth
 
 media_folder: "static/images/uploads"
@@ -25,13 +25,6 @@ collections:
       - { label: "YouTube Video URL", name: "youtube", widget: "string", required: false, hint: "Paste a YouTube link, e.g. https://youtube.com/watch?v=xxxx" }
       - { label: "Instagram Post URL", name: "instagram", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
-      - label: "FAQs (shown on page + helps Google rich results)"
-        name: "faq"
-        widget: "list"
-        required: false
-        fields:
-          - { label: "Question", name: "question", widget: "string" }
-          - { label: "Answer", name: "answer", widget: "text" }
 
   - name: "products"
     label: "Products"
@@ -46,13 +39,6 @@ collections:
       - { label: "Order (lower = first)", name: "weight", widget: "number", required: false }
       - { label: "Photos", name: "gallery", widget: "list", field: { label: "Photo", name: "image", widget: "image" }, required: false }
       - { label: "Body", name: "body", widget: "markdown" }
-      - label: "FAQs (shown on page + helps Google rich results)"
-        name: "faq"
-        widget: "list"
-        required: false
-        fields:
-          - { label: "Question", name: "question", widget: "string" }
-          - { label: "Answer", name: "answer", widget: "text" }
 
   - name: "uses"
     label: "Where Kodam Is Used"
