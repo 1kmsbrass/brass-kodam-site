@@ -1,0 +1,56 @@
+baseURL = "https://www.yourdomain.com/"
+languageCode = "en-in"
+title = "Brass & Copper Kodam Wholesale | Kumbabhishekam Suppliers"
+enableRobotsTXT = true
+
+[params]
+  businessName = "YOUR BUSINESS NAME"
+  tagline = "Wholesale Brass & Copper Kodam for Kumbabhishekam — Pan-India Delivery"
+  phone = "+91-XXXXXXXXXX"
+  whatsapp = "91XXXXXXXXXX"
+  email = "orders@yourdomain.com"
+  city = "Your City, Tamil Nadu"
+  image = "/images/uploads/og-default.jpg"
+  description = "Wholesale manufacturer & supplier of brass and copper kodam, kalasam and kumbabhishekam items. Bulk orders shipped across India — temples, contractors, event organisers."
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[[menu.main]]
+  name = "Products"
+  url = "/products/"
+  weight = 10
+
+[[menu.main]]
+  name = "Where It's Used"
+  url = "/uses/"
+  weight = 15
+
+[[menu.main]]
+  name = "Kumbabhishekam Packages"
+  url = "/kumbabhishekam-packages/"
+  weight = 20
+
+[[menu.main]]
+  name = "Bulk & Engraving"
+  url = "/services/"
+  weight = 25
+
+[[menu.main]]
+  name = "Locations We Serve"
+  url = "/locations/"
+  weight = 30
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 40
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 50

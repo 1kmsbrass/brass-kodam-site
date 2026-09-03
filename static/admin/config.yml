@@ -1,0 +1,107 @@
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME   # <-- change this
+  branch: main
+  base_url: https://YOUR-SITE.pages.dev        # <-- change this to your Cloudflare Pages URL
+  auth_endpoint: api/auth
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "blog"
+    label: "Blog Posts / Updates"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description (for Google)", name: "description", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Keywords", name: "keywords", widget: "list", required: false }
+      - { label: "Cover Photo", name: "cover", widget: "image", required: false }
+      - { label: "YouTube Video URL", name: "youtube", widget: "string", required: false, hint: "Paste a YouTube link, e.g. https://youtube.com/watch?v=xxxx" }
+      - { label: "Instagram Post URL", name: "instagram", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "FAQs (shown on page + helps Google rich results)"
+        name: "faq"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }
+
+  - name: "products"
+    label: "Products"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/index"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description (for Google)", name: "description", widget: "string" }
+      - { label: "Keywords", name: "keywords", widget: "list", required: false }
+      - { label: "Order (lower = first)", name: "weight", widget: "number", required: false }
+      - { label: "Photos", name: "gallery", widget: "list", field: { label: "Photo", name: "image", widget: "image" }, required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "FAQs (shown on page + helps Google rich results)"
+        name: "faq"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }
+
+  - name: "uses"
+    label: "Where Kodam Is Used"
+    folder: "content/uses"
+    create: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description (for Google)", name: "description", widget: "string" }
+      - { label: "Keywords", name: "keywords", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "services"
+    label: "Bulk Kg-Rate & Engraving"
+    folder: "content/services"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/index"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description (for Google)", name: "description", widget: "string" }
+      - { label: "Keywords", name: "keywords", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "locations"
+    label: "Locations We Serve"
+    folder: "content/locations"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description (for Google)", name: "description", widget: "string" }
+      - { label: "Keywords", name: "keywords", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Site Pages"
+    files:
+      - label: "Homepage"
+        name: "home"
+        file: "content/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Keywords", name: "keywords", widget: "list", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact"
+        name: "contact"
+        file: "content/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
