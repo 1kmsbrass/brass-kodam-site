@@ -28,7 +28,7 @@ Enter your Yagasalai count and ceremony quantities to get a quick planning total
 
 ## Want to know the rate?
 
-**Call {{< rawhtml >}}<a class="call-main" href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a>{{< /rawhtml >}}**
+**Call [{{ .Site.Params.phone }}](tel:{{ .Site.Params.phone }})**
 
 Ask about size, weight, quantity and delivery.
 
