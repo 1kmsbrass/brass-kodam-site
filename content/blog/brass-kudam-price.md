@@ -1,10 +1,12 @@
 ---
-title: "Brass Kudam Price: What Actually Determines the Price?"
+title: "What Is the Brass Kudam Price?"
 description: "A practical guide to brass kudam price: weight, size, workmanship, quantity, GST, transport and what to ask before comparing quotes."
+language: "en"
+category: "Price & Buying"
 keywords: ["brass kudam price", "brass kodam price", "pithalai kudam price", "brass kudam wholesale"]
 ---
 
-# Brass Kudam Price: What Actually Determines the Price?
+# What Is the Brass Kudam Price?
 
 If you search for **brass kudam price**, you will probably find a lot of numbers.
 
