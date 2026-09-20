@@ -1,10 +1,12 @@
 ---
-title: "Big Size Brass Kudam: Sizes, Weight and What to Check"
+title: "How Do I Choose a Big Size Brass Kudam?"
 description: "Looking for a big size brass kudam? Learn which dimensions, capacity and weight to check before buying for temples, Kumbabhishekam or bulk use."
+language: "en"
+category: "Size & Selection"
 keywords: ["brass kudam big size", "big brass kudam", "large brass kudam", "big pithalai kudam"]
 ---
 
-# Big Size Brass Kudam: Sizes, Weight and What to Check
+# How Do I Choose a Big Size Brass Kudam?
 
 “Big size brass kudam.”
 
