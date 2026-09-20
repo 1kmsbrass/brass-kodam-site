@@ -1,29 +1,31 @@
 ---
 title: "Brass Kodam & Sombu Wholesale | KMS Brass"
-description: "Brass kodam and sombu wholesale from KMS Brass. Call for sizes, rates and bulk orders."
+description: "Brass kodam and sombu wholesale. Check sizes, see products, and call for bulk rates."
 keywords: ["brass kodam wholesale", "brass kudam", "pithalai kodam", "brass sombu wholesale", "pithalai sombu"]
 ---
 
 # Brass Kodam & Sombu
 
-**Wholesale. Bulk. Direct.**
+Wholesale supply for bulk buyers.
 
-## Kodam
+## Looking for Kodam?
 
-Brass kodam for temples, Kumbabhishekam and wholesale orders.
+**See sizes, photos and details.**
 
-[View Kodam](/brass-kodam/)
+[View Kodam →](/brass-kodam/)
 
-## Sombu
+## Looking for Sombu?
 
-Brass sombu for pooja, temples and bulk orders.
+**See options and ask for a rate.**
 
-[Ask for Sombu]
+[View Sombu →](/products/)
 
-### Need a rate?
+## Want to know the rate?
 
-**{{< rawhtml >}}<a class="call-main" href="tel:{{ .Site.Params.phone }}">Call {{ .Site.Params.phone }}</a>{{< /rawhtml >}}**
+**Call {{< rawhtml >}}<a class="call-main" href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a>{{< /rawhtml >}}**
 
-Sizes, weight, quantity and wholesale rates over the phone.
+Ask about size, weight, quantity and delivery.
 
-**KMS Brass · Tamil Nadu · Pan-India supply**
+---
+
+**Need something else?** [See products →](/products/)
