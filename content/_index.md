@@ -26,6 +26,10 @@ Wholesale supply for bulk buyers.
 
 Enter your Yagasalai count and ceremony quantities to get a quick planning total.
 
+## Want to see real customers?
+
+[See customer photos →](/customer-photos/)
+
 ## Want to know the rate?
 
 **Call [{{ .Site.Params.phone }}](tel:{{ .Site.Params.phone }})**
