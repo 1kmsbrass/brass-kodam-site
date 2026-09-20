@@ -1,5 +1,8 @@
 ---
 title: "What Size Is a Small Brass Kudam?"
+language: "en"
+category: "Size & Selection"
+tamil_url: "/blog/ta-pithalai-kudam-siriya-size/"
 description: "Buying a small brass kudam? Learn how to compare dimensions, capacity, weight and quantity instead of relying only on the word small."
 language: "en"
 category: "Size & Selection"
