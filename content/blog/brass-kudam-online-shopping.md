@@ -1,5 +1,8 @@
 ---
 title: "What Should I Check Before Buying a Brass Kudam Online?"
+language: "en"
+category: "Buying Online"
+tamil_url: "/blog/ta-pithalai-kudam-online/"
 description: "Buying a brass kudam online? Check weight, dimensions, capacity, real product photos, packing, delivery, GST and damage policy before paying."
 language: "en"
 category: "Buying Online"
