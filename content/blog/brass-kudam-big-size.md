@@ -1,5 +1,8 @@
 ---
 title: "How Do I Choose a Big Size Brass Kudam?"
+language: "en"
+category: "Size & Selection"
+tamil_url: "/blog/ta-pithalai-kudam-periya-size/"
 description: "Looking for a big size brass kudam? Learn which dimensions, capacity and weight to check before buying for temples, Kumbabhishekam or bulk use."
 language: "en"
 category: "Size & Selection"
