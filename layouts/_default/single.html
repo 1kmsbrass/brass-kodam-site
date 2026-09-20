@@ -1,49 +1,37 @@
 {{ define "main" }}
 <article class="article">
+  <nav class="article-nav" aria-label="Article navigation">
+    <a class="nav-back" href="javascript:history.back()">← Back</a>
+    <a class="buy-button" href="/brass-kodam/">🛒 BUY BRASS KODAM</a>
+    <a class="nav-call" href="tel:+919894055337">📞 Call</a>
+  </nav>
   <div class="article-top">
     <a class="back-link" href="/blog/">← All buying guides</a>
     {{ with .Params.category }}<span class="category-pill">{{ . }}</span>{{ end }}
   </div>
   <h1>{{ .Title }}</h1>
-
   <div class="article-intro">You came here with a question. Let's answer that first.</div>
-
   {{ if eq .Params.language "ta" }}
   <div class="language-switch"><span>தமிழ்</span> · <a href="{{ .Params.english_url }}">English</a></div>
   {{ else }}
   <div class="language-switch"><span>English</span> · <a href="{{ .Params.tamil_url }}">தமிழில் படிக்க</a></div>
   {{ end }}
-
   {{ .Content }}
-
   {{ with .Params.faq }}
   <h2>Frequently Asked Questions</h2>
   <div class="faq-block">
-    {{ range . }}
-    <details class="faq-item">
-      <summary>{{ .question }}</summary>
-      <p>{{ .answer }}</p>
-    </details>
-    {{ end }}
+    {{ range . }}<details class="faq-item"><summary>{{ .question }}</summary><p>{{ .answer }}</p></details>{{ end }}
   </div>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {{ range $i, $qa := . }}{{ if $i }},{{ end }}
-      {"@type":"Question","name":{{ $qa.question | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ $qa.answer | jsonify }}}}
-      {{ end }}
-    ]
-  }
-  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{ range $i, $qa := . }}{{ if $i }},{{ end }}{"@type":"Question","name":{{ $qa.question | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ $qa.answer | jsonify }}}}{{ end }}]}</script>
   {{ end }}
-
   <div class="article-next">
-    <strong>Still deciding?</strong>
-    <p>That's fine. Brass isn't going anywhere. 😄</p>
-    <a href="/brass-kodam/">See Brass Kodam sizes & products →</a>
-    <br><a href="tel:+919894055337">Ask for the current rate →</a>
+    <strong>Ready to buy?</strong>
+    <p>Tell us the size and quantity. We'll help with the current rate.</p>
+    <a class="buy-button buy-large" href="/brass-kodam/">🛒 BUY BRASS KODAM</a>
+    <div class="contact-row">
+      <a href="tel:+919894055337">📞 Call KMS Brass</a>
+      <a href="https://wa.me/{{ .Site.Params.whatsapp }}?text=Hi%2C%20I%27d%20like%20to%20buy%20brass%20kodam" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+    </div>
   </div>
 </article>
 {{ end }}
