@@ -1,10 +1,12 @@
 ---
-title: "Brass Kudam Online Shopping: What to Check Before You Buy"
+title: "What Should I Check Before Buying a Brass Kudam Online?"
 description: "Buying a brass kudam online? Check weight, dimensions, capacity, real product photos, packing, delivery, GST and damage policy before paying."
+language: "en"
+category: "Buying Online"
 keywords: ["brass kudam online shopping", "brass kudam online", "buy brass kudam online", "pithalai kudam online"]
 ---
 
-# Brass Kudam Online Shopping: What to Check Before You Buy
+# What Should I Check Before Buying a Brass Kudam Online?
 
 Buying a brass kudam online is convenient.
 
