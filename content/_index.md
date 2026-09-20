@@ -26,9 +26,13 @@ Wholesale supply for bulk buyers.
 
 Enter your Yagasalai count and ceremony quantities to get a quick planning total.
 
-## Want to see real customers?
+## Real customers
 
-[See customer photos →](/customer-photos/)
+![Customers with a brass temple bell](/images/customers/customer-kodam-01.jpg)
+
+![Customers with a brass temple item](/images/customers/customer-kodam-02.jpg)
+
+[See more customer photos →](/customer-photos/)
 
 ## Want to know the rate?
 
