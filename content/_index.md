@@ -1,17 +1,29 @@
 ---
-title: "Brass & Copper Kodam Wholesale Supplier | Kumbabhishekam Items Pan-India"
-description: "Buy brass and copper kodam wholesale for Kumbabhishekam. Bulk manufacturer supplying temples and contractors across Tamil Nadu, Karnataka, Andhra Pradesh, Telangana, Kerala and all India. Request a wholesale quote today."
-keywords: ["brass kodam wholesale", "copper kodam manufacturer", "kumbabhishekam items", "kalasam wholesale India", "temple kodam supplier"]
+title: "Brass Kodam & Sombu Wholesale | KMS Brass"
+description: "Brass kodam and sombu wholesale from KMS Brass. Call for sizes, rates and bulk orders."
+keywords: ["brass kodam wholesale", "brass kudam", "pithalai kodam", "brass sombu wholesale", "pithalai sombu"]
 ---
 
-## Wholesale Brass & Copper Kodam for Kumbabhishekam — Delivered Pan-India
+# Brass Kodam & Sombu
 
-We manufacture and supply **brass kodam**, **copper kodam**, and **panchaloha kodam** in bulk for **Kumbabhishekam**, temple consecration events, and ritual contractors across India. Trusted by temple trusts, event organisers, and pooja-item retailers for on-time bulk delivery.
+**Wholesale. Bulk. Direct.**
 
-- Bulk / wholesale pricing — no minimum order too large
-- Standard sizes for Kumbabhishekam (1008, 108, custom count kalasam sets)
-- Brass, copper, and panchaloha options
-- Pan-India shipping and freight support
-- Custom engraving and temple-specific requirements
+## Kodam
 
-[Browse Products →](/products/) · [Kumbabhishekam Packages →](/kumbabhishekam-packages/) · [Get a Wholesale Quote →](/contact/)
+Brass kodam for temples, Kumbabhishekam and wholesale orders.
+
+[View Kodam](/brass-kodam/)
+
+## Sombu
+
+Brass sombu for pooja, temples and bulk orders.
+
+[Ask for Sombu]
+
+### Need a rate?
+
+**{{< rawhtml >}}<a class="call-main" href="tel:{{ .Site.Params.phone }}">Call {{ .Site.Params.phone }}</a>{{< /rawhtml >}}**
+
+Sizes, weight, quantity and wholesale rates over the phone.
+
+**KMS Brass · Tamil Nadu · Pan-India supply**
