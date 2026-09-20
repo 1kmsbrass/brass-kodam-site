@@ -3,61 +3,21 @@
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Params.businessName }}{{ end }}</title>
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
-
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:image" content="{{ .Site.Params.image | absURL }}">
 <meta property="og:site_name" content="{{ .Site.Params.businessName }}">
-
-{{ if .IsHome }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "{{ .Site.Params.businessName }}",
-  "url": "{{ .Site.BaseURL }}",
-  "telephone": "{{ .Site.Params.phone }}",
-  "description": "{{ .Site.Params.description }}"
-}
-</script>
-{{ end }}
-
-{{ if eq .Section "products" }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "{{ .Title }}",
-  "description": "{{ .Description }}",
-  "brand": {
-    "@type": "Brand",
-    "name": "KMS Brass"
-  }
-}
-</script>
-{{ end }}
-
+{{ if .IsHome }}<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"{{ .Site.Params.businessName }}","url":"{{ .Site.BaseURL }}","telephone":"{{ .Site.Params.phone }}","description":"{{ .Site.Params.description }}"}</script>{{ end }}
+{{ if eq .Section "products" }}<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"{{ .Title }}","description":"{{ .Description }}","brand":{"@type":"Brand","name":"KMS Brass"}}</script>{{ end }}
 <style>
-  :root{--copper:#b5651d;--brass:#a67c3d;--ink:#2a2320;--paper:#faf7f2;--line:#e8dfd2}
-  *{box-sizing:border-box}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:760px;margin:0 auto;padding:0 20px 60px;line-height:1.6;color:var(--ink);background:var(--paper)}
-  header{border-bottom:1px solid var(--line);padding:18px 0;margin-bottom:34px;display:flex;align-items:center;justify-content:space-between}
-  header strong{font-size:1.05em;letter-spacing:.04em}
-  .phone-top{font-weight:700;text-decoration:none;color:var(--copper);font-size:.95em}
-  h1{font-family:Georgia,"Times New Roman",serif;color:var(--ink);font-size:2em;line-height:1.2;margin-bottom:.35em}
-  h2{font-family:Georgia,serif;color:var(--ink);font-size:1.35em;margin-top:2em}
-  a{color:var(--copper)}
-  .call-main{display:inline-block;font-size:1.25em;font-weight:800;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--copper);padding-bottom:2px}
-  ul{padding-left:1.2em}
-  li{margin-bottom:.4em}
-  footer{border-top:1px solid var(--line);margin-top:70px;padding-top:18px;color:#7a7168;font-size:.8em}
-  .video-embed,.instagram-embed{margin:1.5em 0}
-  .video-embed iframe{width:100%;aspect-ratio:16/9;border-radius:6px}
-  .instagram-embed iframe{width:100%;min-height:500px;border-radius:6px}
-  img{max-width:100%;border-radius:6px}
-  .whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:12px 18px;border-radius:30px;text-decoration:none;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.18);z-index:100}
-  .faq-item{border-bottom:1px solid var(--line);padding:14px 0}
-  .faq-item summary{font-weight:600;cursor:pointer;color:var(--ink)}
+:root{--copper:#b5651d;--brass:#a67c3d;--ink:#2a2320;--paper:#faf7f2;--line:#e8dfd2}
+*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:760px;margin:0 auto;padding:0 20px 60px;line-height:1.65;color:var(--ink);background:var(--paper)}
+header{border-bottom:1px solid var(--line);padding:18px 0;margin-bottom:34px;display:flex;align-items:center;justify-content:space-between}header strong{font-size:1.05em;letter-spacing:.04em}.phone-top{font-weight:700;text-decoration:none;color:var(--copper);font-size:.95em}
+h1{font-family:Georgia,"Times New Roman",serif;color:var(--ink);font-size:2em;line-height:1.2;margin-bottom:.35em}h2{font-family:Georgia,serif;color:var(--ink);font-size:1.35em;margin-top:2em}a{color:var(--copper)}ul{padding-left:1.2em}li{margin-bottom:.4em}
+footer{border-top:1px solid var(--line);margin-top:70px;padding-top:18px;color:#7a7168;font-size:.8em}.video-embed,.instagram-embed{margin:1.5em 0}.video-embed iframe{width:100%;aspect-ratio:16/9;border-radius:6px}.instagram-embed iframe{width:100%;min-height:500px;border-radius:6px}img{max-width:100%;border-radius:6px}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:12px 18px;border-radius:30px;text-decoration:none;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.18);z-index:100}.faq-item{border-bottom:1px solid var(--line);padding:14px 0}.faq-item summary{font-weight:600;cursor:pointer;color:var(--ink)}
+.article-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}.back-link{font-size:.9em;text-decoration:none}.category-pill{font-size:.75em;border:1px solid var(--line);border-radius:20px;padding:4px 9px;color:#6e655d}.article-intro{background:#f1ebe2;border-left:3px solid var(--brass);padding:10px 13px;margin:0 0 12px;border-radius:5px;color:#5f554c}.language-switch{font-size:.88em;margin:8px 0 22px}.guide-group{border-top:1px solid var(--line);padding:20px 0}.guide-group h2{margin-top:0}.guide-group li{margin:9px 0}.language-box{margin-top:20px;padding:16px;background:#f1ebe2;border-radius:8px}.article-next{margin-top:36px;padding:20px;border:1px solid var(--line);border-radius:8px}.article-next p{margin:.3em 0 1em;color:#6e655d}
+@media(max-width:520px){body{padding-left:16px;padding-right:16px}h1{font-size:1.75em}.article-top{align-items:flex-start}}
 </style>
