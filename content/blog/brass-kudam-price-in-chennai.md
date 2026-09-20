@@ -1,5 +1,8 @@
 ---
 title: "What Is the Brass Kudam Price in Chennai?"
+language: "en"
+category: "Price & Buying"
+tamil_url: "/blog/ta-chennai-pithalai-kudam-vilai/"
 description: "Looking for brass kudam price in Chennai? Compare product weight, dimensions, quantity, GST, transport and delivered cost rather than only the listed price."
 language: "en"
 category: "Price & Buying"
