@@ -1,10 +1,10 @@
 baseURL = "https://brasskudam.in/"
 languageCode = "en-in"
-title = "Brass Kodam | Pithalai Kodam Wholesale Supplier"
+title = "BrassKudam.in | Brass Kodam & Pithalai Kodam"
 enableRobotsTXT = true
 
 [params]
-  businessName = "KMS BRASS KODAM WHOLESALE"
+  businessName = "BrassKudam.in"
   tagline = "Brass Kodam for Kumbabhishekam, Temples & Wholesale Orders"
   phone = "+91-9894055337"
   whatsapp = "919894055337"
