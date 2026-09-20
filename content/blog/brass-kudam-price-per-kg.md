@@ -1,5 +1,8 @@
 ---
 title: "How Should I Compare Brass Kudam Price Per Kg?"
+language: "en"
+category: "Price & Buying"
+tamil_url: "/blog/ta-pithalai-kudam-kilo-vilai/"
 description: "How to compare brass kudam price per kg without getting confused by metal rates, product weight, labour, GST, packing and transport."
 language: "en"
 category: "Price & Buying"
