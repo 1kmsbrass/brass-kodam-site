@@ -1,5 +1,8 @@
 ---
 title: "What Is the Brass Kudam Price?"
+language: "en"
+category: "Price & Buying"
+tamil_url: "/blog/ta-pithalai-kudam-vilai/"
 description: "A practical guide to brass kudam price: weight, size, workmanship, quantity, GST, transport and what to ask before comparing quotes."
 language: "en"
 category: "Price & Buying"
