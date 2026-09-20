@@ -1,10 +1,12 @@
 ---
-title: "Brass Kudam Price in Chennai: What Should You Actually Compare?"
+title: "What Is the Brass Kudam Price in Chennai?"
 description: "Looking for brass kudam price in Chennai? Compare product weight, dimensions, quantity, GST, transport and delivered cost rather than only the listed price."
+language: "en"
+category: "Price & Buying"
 keywords: ["brass kudam price in Chennai", "brass kudam Chennai", "pithalai kudam Chennai", "brass kudam supplier Chennai"]
 ---
 
-# Brass Kudam Price in Chennai: What Should You Actually Compare?
+# What Is the Brass Kudam Price in Chennai?
 
 If you are searching for **brass kudam price in Chennai**, you probably want one thing:
 
