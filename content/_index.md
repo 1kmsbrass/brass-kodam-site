@@ -8,48 +8,38 @@ keywords: ["brass kodam wholesale", "brass kudam", "pithalai kodam", "brass somb
 
 Wholesale supply for bulk buyers.
 
-## Looking for Kodam?
+## Brass Kodam
 
-**See sizes, photos and details.**
+See sizes, photos and details.
 
-[View Kodam →](/brass-kodam/)
+[View Brass Kodam →](/brass-kodam/)
 
-## Looking for Sombu?
+## Brass Sombu
 
-**See options and ask for a rate.**
+See options and ask for a wholesale rate.
 
-[View Sombu →](/products/)
+[View Brass Sombu →](/products/)
 
 ## Planning a Kumbabhishekam?
 
-**Find your Kodam quantity →** [Open the Kodam Finder](/tools/kodam-finder.html)
+Use the quick Kodam quantity finder.
 
-Enter your Yagasalai count and ceremony quantities to get a quick planning total.
+[Open Kodam Finder →](/tools/kodam-finder.html)
 
-## Real work & dispatch
+## From a real order
 
 ![Brass kodams being weighed before dispatch](/images/work/brass-kodam-weighing-01.jpg)
 
-**Brass kodams being weighed before dispatch.**
+Brass kodams being checked and weighed before delivery.
 
-This is a real order being checked and weighed before delivery. The scale shows 24.8 kg.
+[See more customer and order photos →](/customer-photos/)
 
-[See more real customer and order photos →](/customer-photos/)
-
-## Real customers
-
-![Customers with a brass temple bell](/images/customers/customer-kodam-01.jpg)
-
-![Customers with a brass temple item](/images/customers/customer-kodam-02.jpg)
-
-[See more customer photos →](/customer-photos/)
-
-## Want to know the rate?
+## Need a rate?
 
 **Call [{{ .Site.Params.phone }}](tel:{{ .Site.Params.phone }})**
 
-Ask about size, weight, quantity and delivery.
+Tell us the size, weight, quantity and delivery location.
 
 ---
 
-**Need something else?** [See products →](/products/)
+[See all products →](/products/)
