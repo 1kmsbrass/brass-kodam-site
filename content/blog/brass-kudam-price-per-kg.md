@@ -1,10 +1,12 @@
 ---
-title: "Brass Kudam Price Per Kg: How to Compare Quotes Properly"
+title: "How Should I Compare Brass Kudam Price Per Kg?"
 description: "How to compare brass kudam price per kg without getting confused by metal rates, product weight, labour, GST, packing and transport."
+language: "en"
+category: "Price & Buying"
 keywords: ["brass kudam price per kg", "brass kudam per kg", "pithalai kudam price per kg", "brass kudam wholesale rate"]
 ---
 
-# Brass Kudam Price Per Kg: How to Compare Quotes Properly
+# How Should I Compare Brass Kudam Price Per Kg?
 
 If you buy brass products in quantity, sooner or later somebody will quote you a **price per kg**.
 
