@@ -1,9 +1,26 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ .Content }}
-<ul>
-  {{ range .Pages }}
-  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-  {{ end }}
-</ul>
+<div class="blog-page">
+  <a class="back-link" href="/">← Home</a>
+  <h1>Brass Kodam Buying Guides</h1>
+  {{ .Content }}
+  <section class="guide-group"><h2>💰 Price & Buying</h2><p>Questions about price, kg rates and quotations.</p><ul>
+  <li><a href="/blog/brass-kudam-price/">What Is the Brass Kudam Price?</a></li>
+  <li><a href="/blog/brass-kudam-price-per-kg/">How Should I Compare Brass Kudam Price Per Kg?</a></li>
+  <li><a href="/blog/brass-kudam-price-in-chennai/">What Is the Brass Kudam Price in Chennai?</a></li>
+  <li><a href="/blog/ta-pithalai-kudam-vilai/">பித்தளை குடம் விலை எவ்வளவு?</a></li>
+  <li><a href="/blog/ta-pithalai-kudam-kilo-vilai/">பித்தளை குடம் கிலோ விலையை எப்படி ஒப்பிடுவது?</a></li>
+  <li><a href="/blog/ta-chennai-pithalai-kudam-vilai/">சென்னையில் பித்தளை குடம் விலை எவ்வளவு?</a></li>
+  </ul></section>
+  <section class="guide-group"><h2>📏 Size & Selection</h2><p>Not sure what “big” or “small” actually means? Good. Neither are measurements.</p><ul>
+  <li><a href="/blog/brass-kudam-big-size/">How Do I Choose a Big Size Brass Kudam?</a></li>
+  <li><a href="/blog/brass-kudam-small/">What Size Is a Small Brass Kudam?</a></li>
+  <li><a href="/blog/ta-pithalai-kudam-periya-size/">பெரிய சைஸ் பித்தளை குடம் எப்படி தேர்வு செய்வது?</a></li>
+  <li><a href="/blog/ta-pithalai-kudam-siriya-size/">சின்ன சைஸ் பித்தளை குடம் எந்த அளவு?</a></li>
+  </ul></section>
+  <section class="guide-group"><h2>🛒 Buying Online</h2><p>Because photographs are lovely. Measurements are better.</p><ul>
+  <li><a href="/blog/brass-kudam-online-shopping/">What Should I Check Before Buying a Brass Kudam Online?</a></li>
+  <li><a href="/blog/ta-pithalai-kudam-online/">பித்தளை குடம் ஆன்லைனில் வாங்கும் முன் என்ன பார்க்க வேண்டும்?</a></li>
+  </ul></section>
+  <section class="language-box"><strong>தமிழில் படிக்கிறீர்களா?</strong><p>These guides are written separately for Tamil buyers — not just translated.</p></section>
+</div>
 {{ end }}
