@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kodam Quantity Finder | Kumbabhishekam Planning Tool</title>
+<meta name="description" content="Simple planning calculator for estimating brass kodam and homa kundam quantities for a Kumbabhishekam setup.">
+<style>
+:root{--ink:#26211d;--paper:#faf7f2;--line:#ddd3c7;--accent:#9a6428}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:620px;margin:auto;padding:28px 20px 60px}
+a{color:var(--accent)}
+h1{font:clamp(1.8rem,6vw,2.5rem);line-height:1.15;margin:.3em 0 .2em}
+h2{font-size:1.15rem;margin-top:2rem}
+.intro{color:#665e56;margin-top:0}
+.card{border:1px solid var(--line);border-radius:10px;padding:18px;margin-top:18px;background:#fff}
+label{display:block;font-weight:650;margin:14px 0 6px}
+input{width:100%;padding:12px;border:1px solid #cfc5b9;border-radius:7px;font:inherit}
+button{width:100%;margin-top:18px;padding:13px;border:0;border-radius:7px;background:var(--ink);color:#fff;font:700 1rem inherit;cursor:pointer}
+.result{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.result div{padding:14px;background:#f4eee7;border-radius:8px}
+.result strong{display:block;font-size:1.5rem}
+.note{font-size:.86rem;color:#756c63;margin-top:18px}
+.small{font-size:.9rem;color:#756c63}
+.call{display:inline-block;margin-top:10px;font-weight:750}
+</style>
+</head>
+<body>
+<main>
+<a href="/">← Brass Kodam</a>
+<h1>Kodam Quantity Finder</h1>
+<p class="intro">A quick planning tool for Kumbabhishekam requirements.</p>
+
+<div class="card">
+<h2>Enter your setup</h2>
+
+<label for="yagasalai">Number of Yagasalai</label>
+<input id="yagasalai" type="number" min="1" value="1">
+
+<label for="kodam">Kodams per Yagasalai</label>
+<input id="kodam" type="number" min="0" value="0">
+
+<label for="extra">Additional Kodams</label>
+<input id="extra" type="number" min="0" value="0">
+
+<label for="kundam">Homa Kundams per Yagasalai</label>
+<input id="kundam" type="number" min="0" value="1">
+
+<button onclick="calculate()">Find quantities</button>
+
+<div class="result" aria-live="polite">
+<div><span>Kodams</span><strong id="totalKodam">—</strong></div>
+<div><span>Homa Kundams</span><strong id="totalKundam">—</strong></div>
+</div>
+
+<p class="note"><strong>Important:</strong> This is a planning calculator, not a ritual prescription. The number and arrangement of yagasalai, kumbams/kodams and homa kundams can vary by temple, Agama, tradition and ceremony plan. Enter the quantities specified by your Sivacharya or ceremony organiser.</p>
+</div>
+
+<div class="card">
+<h2>Need the actual supply?</h2>
+<p>Send us your temple plan or required quantity. We can quote brass kodam sizes, weights and bulk rates.</p>
+<a class="call" href="tel:+919894055337">Call 9894055337 →</a>
+</div>
+</main>
+<script>
+function n(id){return Math.max(0,parseInt(document.getElementById(id).value,10)||0)}
+function calculate(){
+ const y=n("yagasalai"), k=n("kodam"), e=n("extra"), c=n("kundam");
+ document.getElementById("totalKodam").textContent=y*k+e;
+ document.getElementById("totalKundam").textContent=y*c;
+}
+calculate();
+</script>
+</body>
+</html>
