@@ -14,6 +14,16 @@ See sizes, photos and details.
 
 [View Brass Kodam →](/brass-kodam/)
 
+## Got a question?
+
+You probably searched for a specific thing. We have answers.
+
+**Price?** [See price & buying guides →](/blog/)
+
+**Big or small?** [See size & selection guides →](/blog/)
+
+**Buying online?** [See what to check →](/blog/brass-kudam-online-shopping/)
+
 ## Brass Sombu
 
 See options and ask for a wholesale rate.
