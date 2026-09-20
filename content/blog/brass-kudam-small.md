@@ -1,10 +1,12 @@
 ---
-title: "Small Brass Kudam: What Size Should You Buy?"
+title: "What Size Is a Small Brass Kudam?"
 description: "Buying a small brass kudam? Learn how to compare dimensions, capacity, weight and quantity instead of relying only on the word small."
+language: "en"
+category: "Size & Selection"
 keywords: ["brass kudam small", "small brass kudam", "small pithalai kudam", "brass kudam size"]
 ---
 
-# Small Brass Kudam: What Size Should You Buy?
+# What Size Is a Small Brass Kudam?
 
 “Small brass kudam” sounds simple.
 
