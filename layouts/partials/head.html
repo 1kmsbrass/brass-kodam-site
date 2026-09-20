@@ -2,7 +2,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Params.businessName }}{{ end }}</title>
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-{{ with .Params.keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
 <link rel="canonical" href="{{ .Permalink }}">
 
 <!-- Open Graph -->
@@ -10,7 +9,8 @@
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-{{ with .Params.cover }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+<meta property="og:image" content="{{ .Site.Params.image | absURL }}">
+<meta property="og:site_name" content="{{ .Site.Params.businessName }}">
 
 {{ if .IsHome }}
 <script type="application/ld+json">
@@ -20,12 +20,6 @@
   "name": "{{ .Site.Params.businessName }}",
   "url": "{{ .Site.BaseURL }}",
   "telephone": "{{ .Site.Params.phone }}",
-  "email": "{{ .Site.Params.email }}",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "{{ .Site.Params.city }}",
-    "addressCountry": "IN"
-  },
   "description": "{{ .Site.Params.description }}"
 }
 </script>
@@ -38,7 +32,10 @@
   "@type": "Product",
   "name": "{{ .Title }}",
   "description": "{{ .Description }}",
-  "brand": "{{ .Site.Params.businessName }}"
+  "brand": {
+    "@type": "Brand",
+    "name": "KMS Brass"
+  }
 }
 </script>
 {{ end }}
