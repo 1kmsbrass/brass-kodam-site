@@ -3,7 +3,7 @@
 <head>
 {{ partial "head.html" . }}
 </head>
-<body>
+<body class="{{ if eq .RelPermalink "/brass-kodam/" }}catalog-page{{ end }}">
 {{ partial "header.html" . }}
 <main>
 {{ block "main" . }}{{ end }}
