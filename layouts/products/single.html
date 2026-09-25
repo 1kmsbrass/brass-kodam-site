@@ -1,0 +1,126 @@
+{{ define "main" }}
+<div class="kodam-catalog">
+  <div class="catalog-tabs">
+    <a class="active" href="/brass-kodam/">All Kodams</a><a href="#purpose">By Use</a><a href="#capacity">By Capacity</a><a href="#size">By Size</a><a href="#shape">By Shape</a><a href="/kumbabhishekam-packages/">Kumbabhishekam</a><a href="#bulk">Bulk Orders</a><a href="/blog/">Buying Guides</a>
+  </div>
+
+  <div class="catalog-layout">
+    <aside class="catalog-filters">
+      <div class="filter-title">NARROW BY <button id="clearFilters" type="button">Clear all</button></div>
+      <section id="purpose"><h3>Use / Purpose</h3>
+        <label><input type="checkbox" data-filter="purpose" value="kumbabhishekam"> Kumbabhishekam</label>
+        <label><input type="checkbox" data-filter="purpose" value="temple"> Temple</label>
+        <label><input type="checkbox" data-filter="purpose" value="pooja"> Pooja</label>
+        <label><input type="checkbox" data-filter="purpose" value="home"> Home</label>
+        <label><input type="checkbox" data-filter="purpose" value="gift"> Gift</label>
+      </section>
+      <section id="capacity"><h3>Capacity (Approx.)</h3>
+        <label><input type="checkbox" data-filter="capacity" value="small"> Under 2 L</label>
+        <label><input type="checkbox" data-filter="capacity" value="medium"> 2–5 L</label>
+        <label><input type="checkbox" data-filter="capacity" value="large"> 5–10 L</label>
+        <label><input type="checkbox" data-filter="capacity" value="xlarge"> 10–20 L</label>
+        <label><input type="checkbox" data-filter="capacity" value="xxlarge"> 20 L+</label>
+      </section>
+      <section id="size"><h3>Approx. Weight</h3>
+        <label><input type="checkbox" data-filter="weight" value="light"> Under 1 kg</label>
+        <label><input type="checkbox" data-filter="weight" value="medium"> 1–3 kg</label>
+        <label><input type="checkbox" data-filter="weight" value="heavy"> 3 kg+</label>
+      </section>
+      <section id="shape"><h3>Shape</h3>
+        <label><input type="checkbox" data-filter="shape" value="traditional"> Traditional</label>
+        <label><input type="checkbox" data-filter="shape" value="tall"> Tall</label>
+        <label><input type="checkbox" data-filter="shape" value="wide"> Wide</label>
+      </section>
+      <a class="filter-buy" href="https://wa.me/{{ .Site.Params.whatsapp }}?text=Hi%2C%20I%27d%20like%20help%20choosing%20a%20brass%20kodam" target="_blank" rel="noopener">WhatsApp for help →</a>
+    </aside>
+
+    <main class="catalog-main">
+      <div class="catalog-intro">
+        <div><span class="eyebrow">BRASSKUDAM.IN</span><h1>Brass Kodam</h1><p>Traditional brass kodam for Kumbabhishekam, temple, pooja and home use. Choose by purpose, size, capacity, weight and shape.</p></div>
+      </div>
+
+      <section id="chooser" class="chooser">
+        <div class="chooser-head"><h2>Help me choose</h2><span>Answer a few questions. We'll narrow the choice space.</span></div>
+        <div class="chooser-grid">
+          <div class="choice-step"><b>1</b><strong>What are you buying it for?</strong><div class="choice-buttons"><button data-choice="purpose" data-value="kumbabhishekam">Kumbabhishekam</button><button data-choice="purpose" data-value="temple">Temple</button><button data-choice="purpose" data-value="pooja">Pooja</button><button data-choice="purpose" data-value="home">Home</button><button data-choice="purpose" data-value="gift">Gift</button></div></div>
+          <div class="choice-step"><b>2</b><strong>What size do you want?</strong><div class="choice-buttons"><button data-choice="capacity" data-value="small">Small</button><button data-choice="capacity" data-value="medium">Medium</button><button data-choice="capacity" data-value="large">Large</button><button data-choice="capacity" data-value="xlarge">Very Large</button></div></div>
+          <div class="choice-step"><b>3</b><strong>How many do you need?</strong><div class="choice-buttons"><button data-choice="quantity" data-value="1">1</button><button data-choice="quantity" data-value="2-5">2–5</button><button data-choice="quantity" data-value="10-25">10–25</button><button data-choice="quantity" data-value="25+">25+</button></div></div>
+          <div class="choice-step result-step"><b>4</b><strong>See matching products</strong><button class="show-options" id="showOptions">Show my options →</button></div>
+        </div>
+      </section>
+
+      <div class="catalog-results-head"><div><strong id="resultCount">8</strong> Brass Kodams <small>· choose a product or ask us</small></div><label>Sort <select id="sortProducts"><option value="capacity">Capacity</option><option value="weight">Weight</option></select></label></div>
+
+      <div class="product-grid" id="productGrid">
+        {{ $products := slice
+          (dict "name" "Brass Kodam 1 Litre" "code" "BK-01" "capacity" "1 L" "capkey" "small" "height" "12 cm" "diameter" "10 cm" "weight" "0.6 kg" "weightkey" "light" "shape" "traditional" "use" "pooja home" "image" "/images/uploads/brass-kodam-no1-front.jpg")
+          (dict "name" "Brass Kodam 2 Litre" "code" "BK-02" "capacity" "2 L" "capkey" "medium" "height" "15 cm" "diameter" "12 cm" "weight" "0.9 kg" "weightkey" "light" "shape" "traditional" "use" "pooja home gift" "image" "/images/uploads/brass-kodam-no3-side.jpg")
+          (dict "name" "Brass Kodam 3 Litre" "code" "BK-03" "capacity" "3 L" "capkey" "medium" "height" "18 cm" "diameter" "14 cm" "weight" "1.4 kg" "weightkey" "medium" "shape" "wide" "use" "pooja temple" "image" "/images/uploads/brass-kodam-polished-detail.jpg")
+          (dict "name" "Brass Kodam 5 Litre" "code" "BK-04" "capacity" "5 L" "capkey" "large" "height" "22 cm" "diameter" "16 cm" "weight" "2.1 kg" "weightkey" "medium" "shape" "traditional" "use" "temple kumbabhishekam" "image" "/images/uploads/brass-kodam-no1-front.jpg")
+          (dict "name" "Brass Kodam 7 Litre" "code" "BK-05" "capacity" "7 L" "capkey" "large" "height" "26 cm" "diameter" "18 cm" "weight" "2.8 kg" "weightkey" "medium" "shape" "wide" "use" "temple kumbabhishekam" "image" "/images/uploads/brass-kodam-no3-side.jpg")
+          (dict "name" "Brass Kodam 10 Litre" "code" "BK-06" "capacity" "10 L" "capkey" "xlarge" "height" "30 cm" "diameter" "20 cm" "weight" "3.6 kg" "weightkey" "heavy" "shape" "traditional" "use" "temple kumbabhishekam" "image" "/images/uploads/brass-kodam-polished-detail.jpg")
+          (dict "name" "Brass Kodam 15 Litre" "code" "BK-07" "capacity" "15 L" "capkey" "xlarge" "height" "34 cm" "diameter" "24 cm" "weight" "4.8 kg" "weightkey" "heavy" "shape" "wide" "use" "kumbabhishekam temple" "image" "/images/uploads/brass-kodam-no1-front.jpg")
+          (dict "name" "Brass Kodam 20 Litre" "code" "BK-08" "capacity" "20 L" "capkey" "xlarge" "height" "38 cm" "diameter" "28 cm" "weight" "6.2 kg" "weightkey" "heavy" "shape" "traditional" "use" "kumbabhishekam bulk" "image" "/images/uploads/brass-kodam-no3-side.jpg")
+        }}
+        {{ range $products }}
+        <article class="product-card" data-purpose="{{ .use }}" data-capacity="{{ .capkey }}" data-weight="{{ .weightkey }}" data-shape="{{ .shape }}" data-capacity-num="{{ strings.TrimSuffix " L" .capacity }}">
+          <div class="product-image"><img src="{{ .image }}" alt="{{ .name }}" loading="lazy"></div>
+          <div class="product-body"><div class="product-code">{{ .code }}</div><h3>{{ .name }}</h3>
+            <dl><div><dt>Capacity</dt><dd>{{ .capacity }}</dd></div><div><dt>Height</dt><dd>{{ .height }}</dd></div><div><dt>Diameter</dt><dd>{{ .diameter }}</dd></div><div><dt>Weight</dt><dd>{{ .weight }}</dd></div></dl>
+            <div class="tags">{{ range (split .use " ") }}{{ end }}<span>{{ .shape }}</span></div>
+            <div class="product-actions"><a class="details" href="/brass-kodam/">View details</a><a class="wa" href="https://wa.me/{{ $.Site.Params.whatsapp }}?text=Hi%2C%20I%27m%20interested%20in%20{{ urlquery .name }}%20({{ .code }})" target="_blank" rel="noopener">WhatsApp</a></div>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+
+      <section id="bulk" class="catalog-bottom">
+        <h2>Buying in quantity?</h2><p>For Kumbabhishekam, temple or wholesale orders, tell us the quantity and approximate size. We'll help you narrow it down.</p>
+        <a class="buy-main" href="https://wa.me/{{ .Site.Params.whatsapp }}?text=Hi%2C%20I%27d%20like%20a%20bulk%20brass%20kodam%20quote" target="_blank" rel="noopener">💬 WhatsApp BrassKudam for a bulk quote</a>
+        <a href="tel:{{ .Site.Params.phone }}">📞 Call</a>
+      </section>
+    </main>
+  </div>
+</div>
+
+<style>
+.catalog-page{background:#fff;color:#18212b;max-width:none;padding:0}.catalog-page main{max-width:none}.catalog-page footer{max-width:1200px;margin:50px auto;padding:20px}.catalog-header{max-width:none;margin:0;padding:10px 28px;border-bottom:1px solid #dfe3e6;background:#fff;display:grid;grid-template-columns:240px minmax(280px,1fr) auto auto auto;gap:18px;align-items:center}.catalog-brand{color:#16202a;text-decoration:none;display:flex;flex-direction:column}.catalog-brand strong{font-size:1.35rem}.catalog-brand span{font-size:.72rem;color:#69727a}.catalog-search{height:42px;border:1px solid #cfd5da;border-radius:4px;padding:9px 14px;color:#7a838b;background:#fafbfc}.catalog-search span{margin-left:8px}.catalog-help{color:#16202a;text-decoration:none}.catalog-call,.catalog-wa{padding:9px 13px;border:1px solid #1c2a35;border-radius:4px;text-decoration:none;font-weight:700}.catalog-wa{background:#f5c928;color:#111;border-color:#f5c928}.catalog-tabs{display:flex;gap:0;overflow:auto;border-bottom:1px solid #dfe3e6;background:#f7f8f9;padding:0 28px}.catalog-tabs a{padding:12px 16px;color:#29343d;text-decoration:none;white-space:nowrap;font-size:.9rem}.catalog-tabs a.active{font-weight:800;border-bottom:3px solid #f5c928}.catalog-layout{display:grid;grid-template-columns:240px minmax(0,1fr);max-width:1500px;margin:0 auto}.catalog-filters{border-right:1px solid #dfe3e6;padding:22px 18px;min-height:900px}.filter-title{font-size:.8rem;font-weight:800;letter-spacing:.06em;display:flex;justify-content:space-between}.filter-title button{border:0;background:none;text-decoration:underline;cursor:pointer}.catalog-filters section{padding:18px 0;border-bottom:1px solid #e3e6e8}.catalog-filters h3{font-size:.9rem;margin:0 0 10px}.catalog-filters label{display:block;font-size:.88rem;margin:9px 0}.catalog-filters input{margin-right:8px}.filter-buy{display:block;margin-top:18px;background:#f5c928;color:#111;text-align:center;padding:11px;border-radius:4px;font-weight:800;text-decoration:none}.catalog-main{padding:22px 24px}.catalog-intro{border-bottom:1px solid #e3e6e8;padding-bottom:14px}.eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.1em;color:#66717b}.catalog-intro h1{font-family:Arial,sans-serif;font-size:2.15rem;margin:.2rem 0}.catalog-intro p{margin:0;color:#53606b}.chooser{margin:18px 0;border:1px solid #d9dee2;border-radius:5px;background:#fbfcfd}.chooser-head{padding:12px 14px;border-bottom:1px solid #e2e6e8;display:flex;gap:14px;align-items:baseline}.chooser-head h2{font-family:Arial,sans-serif;font-size:1.1rem;margin:0}.chooser-head span{font-size:.82rem;color:#65717b}.chooser-grid{display:grid;grid-template-columns:1.3fr 1.15fr 1fr .85fr}.choice-step{padding:15px;border-right:1px solid #e2e6e8;min-height:135px}.choice-step>b{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#21384b;color:white;margin-right:7px}.choice-step strong{font-size:.9rem}.choice-buttons{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.choice-buttons button{background:#fff;border:1px solid #cbd2d8;border-radius:4px;padding:7px 9px;cursor:pointer}.choice-buttons button.selected{background:#f5c928;border-color:#f5c928;font-weight:700}.show-options{margin-top:20px;background:#1f7a50;color:#fff;border:0;border-radius:4px;padding:10px 13px;font-weight:800;cursor:pointer}.catalog-results-head{display:flex;justify-content:space-between;align-items:center;margin:20px 0 12px}.catalog-results-head small{color:#69747e}.catalog-results-head select{padding:7px;border:1px solid #cbd2d8;border-radius:4px}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(180px,1fr));gap:12px}.product-card{border:1px solid #dce1e4;border-radius:4px;background:#fff;overflow:hidden}.product-image{height:190px;background:#f4f5f6;display:grid;place-items:center}.product-image img{width:100%;height:100%;object-fit:contain;border-radius:0}.product-body{padding:10px}.product-code{font-size:.68rem;color:#7b858e}.product-card h3{font-family:Arial,sans-serif;font-size:.98rem;margin:2px 0 8px}.product-card dl{margin:0;border-top:1px solid #e6e9eb}.product-card dl div{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #eef0f1;font-size:.78rem}.product-card dt{color:#66717a}.product-card dd{margin:0;font-weight:600}.tags{margin:8px 0}.tags span{display:inline-block;background:#f3f5f6;border:1px solid #e0e4e6;border-radius:12px;padding:3px 7px;font-size:.68rem}.product-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px}.product-actions a{padding:8px 5px;text-align:center;border-radius:4px;text-decoration:none;font-size:.78rem;font-weight:800}.details{background:#f5c928;color:#111}.wa{border:1px solid #2c8b62;color:#216b4b}.catalog-bottom{margin-top:28px;padding:22px;border:1px solid #d9dee2;background:#fbfcfd}.catalog-bottom h2{font-family:Arial,sans-serif;margin:0}.catalog-bottom a{margin-right:18px}.buy-main{display:inline-block;background:#f5c928;color:#111;padding:11px 14px;border-radius:4px;font-weight:800;text-decoration:none;margin:8px 0}@media(max-width:900px){.catalog-header{grid-template-columns:1fr auto auto}.catalog-search{grid-column:1/-1;grid-row:2}.catalog-help{display:none}.catalog-layout{grid-template-columns:1fr}.catalog-filters{min-height:auto;border-right:0;border-bottom:1px solid #dfe3e6}.product-grid{grid-template-columns:repeat(2,minmax(150px,1fr))}.chooser-grid{grid-template-columns:1fr 1fr}.choice-step:nth-child(2){border-right:0}.choice-step:nth-child(3),.choice-step:nth-child(4){border-top:1px solid #e2e6e8}}@media(max-width:560px){.catalog-header{padding:9px 12px;grid-template-columns:1fr auto}.catalog-brand strong{font-size:1.05rem}.catalog-call{display:none}.catalog-tabs{padding:0 8px}.catalog-main{padding:15px 10px}.chooser-grid{grid-template-columns:1fr}.choice-step{border-right:0;border-bottom:1px solid #e2e6e8}.product-grid{grid-template-columns:1fr 1fr;gap:8px}.product-image{height:140px}.product-actions{grid-template-columns:1fr}.catalog-intro h1{font-size:1.7rem}.catalog-results-head{align-items:flex-start;gap:8px}.catalog-results-head label{font-size:.8rem}}
+</style>
+
+<script>
+(function(){
+  const cards=[...document.querySelectorAll('.product-card')];
+  const checks=[...document.querySelectorAll('[data-filter]')];
+  const choices={purpose:null,capacity:null,quantity:null};
+  const count=document.getElementById('resultCount');
+  function apply(){
+    const active={};
+    checks.forEach(c=>{if(c.checked){(active[c.dataset.filter]??=[]).push(c.value)}});
+    let shown=0;
+    cards.forEach(card=>{
+      const match=Object.entries(active).every(([key,vals])=>{
+        if(key==='purpose') return vals.some(v=>card.dataset.purpose.includes(v));
+        return vals.includes(card.dataset[key]);
+      });
+      card.hidden=!match;if(match) shown++;
+    });
+    count.textContent=shown;
+  }
+  checks.forEach(c=>c.addEventListener('change',apply));
+  document.getElementById('clearFilters').addEventListener('click',()=>{checks.forEach(c=>c.checked=false);apply()});
+  document.querySelectorAll('[data-choice]').forEach(btn=>btn.addEventListener('click',()=>{
+    const type=btn.dataset.choice; document.querySelectorAll('[data-choice="'+type+'"]').forEach(x=>x.classList.remove('selected')); btn.classList.add('selected'); choices[type]=btn.dataset.value;
+  }));
+  document.getElementById('showOptions').addEventListener('click',()=>{
+    checks.forEach(c=>c.checked=false);
+    if(choices.purpose) document.querySelectorAll('[data-filter="purpose"][value="'+choices.purpose+'"]').forEach(c=>c.checked=true);
+    if(choices.capacity) document.querySelectorAll('[data-filter="capacity"][value="'+choices.capacity+'"]').forEach(c=>c.checked=true);
+    apply();document.getElementById('productGrid').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+  document.getElementById('sortProducts').addEventListener('change',e=>{
+    const grid=document.getElementById('productGrid');
+    [...cards].sort((a,b)=>parseFloat(a.dataset.capacityNum)-parseFloat(b.dataset.capacityNum)).forEach(x=>grid.appendChild(x));
+  });
+})();
+</script>
+{{ end }}
