@@ -3,6 +3,7 @@ title: "Brass Kodam Wholesale | Bulk Supplier for Kumbabhishekam"
 description: "Wholesale brass kodam in all standard Kumbabhishekam sizes. Bulk manufacturing, pan-India delivery, custom engraving available."
 keywords: ["brass kodam wholesale", "brass kodam price", "brass kodam for kumbabhishekam", "brass kalasam bulk"]
 weight: 10
+url: "/brass-kodam/"
 gallery:
   - image: "/images/uploads/brass-kodam-no1-front.jpg"
     alt: "Brass Kodam No.1 front view"
