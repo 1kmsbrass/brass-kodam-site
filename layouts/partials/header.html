@@ -1,6 +1,15 @@
 {{ if eq .RelPermalink "/brass-kodam/" }}
 <header class="catalog-header">
   <a class="catalog-brand" href="/brass-kodam/"><strong>BRASSKUDAM.IN</strong><span>Brass Kodam Specialist</span></a>
+  <div class="catalog-section-switch">
+    <label for="topSectionSwitch">CURRENT SECTION</label>
+    <select id="topSectionSwitch" onchange="if(this.value) location.href=this.value">
+      <option value="/brass-kodam/" selected>BRASS KODAM</option>
+      <option value="/products/">BRASS SOMBU &amp; RELATED PRODUCTS</option>
+      <option value="/kumbabhishekam-packages/">KUMBABHISHEKAM</option>
+      <option value="/blog/">GUIDES</option>
+    </select>
+  </div>
   <div class="catalog-search">⌕ <span>Search by size, capacity, weight or use...</span></div>
   <a class="catalog-help" href="#chooser">Help Me Choose</a>
   <a class="catalog-call" href="tel:{{ .Site.Params.phone }}">☎ Call</a>
