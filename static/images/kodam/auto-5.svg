@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#8b5a19"/><stop offset=".28" stop-color="#f2cf63"/><stop offset=".5" stop-color="#fff0a0"/><stop offset=".72" stop-color="#c28b2c"/><stop offset="1" stop-color="#70430f"/></linearGradient></defs>
+<rect width="320" height="240" fill="#f5f6f7"/>
+<ellipse cx="160" cy="206" rx="76" ry="13" fill="#d7d9da"/>
+<path d="M96 110 C98 72 114 62 128 55 L136 31 Q160 20 184 31 L192 55 C206 62 222 72 224 110 L214 180 Q160 198 106 180 Z" fill="url(#g)" stroke="#8b5a19" stroke-width="3"/>
+<ellipse cx="160" cy="55" rx="32" ry="9" fill="#d7a33a" stroke="#8b5a19" stroke-width="3"/>
+<ellipse cx="160" cy="55" rx="24" ry="4" fill="#6d4615"/>
+<path d="M104 112 Q160 135 216 112 M108 145 Q160 165 212 145" fill="none" stroke="#8b5a19" stroke-width="3" opacity=".55"/>
+<text x="160" y="224" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#2a2f33">Brass Kodam · 5 L</text>
+</svg>
