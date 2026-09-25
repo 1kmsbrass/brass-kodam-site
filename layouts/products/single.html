@@ -53,14 +53,14 @@
 
       <div class="product-grid" id="productGrid">
         {{ $products := slice
-          (dict "name" "Brass Kodam 1 Litre" "code" "BK-01" "capacity" "1 L" "capkey" "small" "height" "12 cm" "diameter" "10 cm" "weight" "0.6 kg" "weightkey" "light" "shape" "traditional" "use" "pooja home" "image" "/images/uploads/brass-kodam-no1-front.jpg")
-          (dict "name" "Brass Kodam 2 Litre" "code" "BK-02" "capacity" "2 L" "capkey" "medium" "height" "15 cm" "diameter" "12 cm" "weight" "0.9 kg" "weightkey" "light" "shape" "traditional" "use" "pooja home gift" "image" "/images/uploads/brass-kodam-no3-side.jpg")
-          (dict "name" "Brass Kodam 3 Litre" "code" "BK-03" "capacity" "3 L" "capkey" "medium" "height" "18 cm" "diameter" "14 cm" "weight" "1.4 kg" "weightkey" "medium" "shape" "wide" "use" "pooja temple" "image" "/images/uploads/brass-kodam-polished-detail.jpg")
-          (dict "name" "Brass Kodam 5 Litre" "code" "BK-04" "capacity" "5 L" "capkey" "large" "height" "22 cm" "diameter" "16 cm" "weight" "2.1 kg" "weightkey" "medium" "shape" "traditional" "use" "temple kumbabhishekam" "image" "/images/uploads/brass-kodam-no1-front.jpg")
-          (dict "name" "Brass Kodam 7 Litre" "code" "BK-05" "capacity" "7 L" "capkey" "large" "height" "26 cm" "diameter" "18 cm" "weight" "2.8 kg" "weightkey" "medium" "shape" "wide" "use" "temple kumbabhishekam" "image" "/images/uploads/brass-kodam-no3-side.jpg")
-          (dict "name" "Brass Kodam 10 Litre" "code" "BK-06" "capacity" "10 L" "capkey" "xlarge" "height" "30 cm" "diameter" "20 cm" "weight" "3.6 kg" "weightkey" "heavy" "shape" "traditional" "use" "temple kumbabhishekam" "image" "/images/uploads/brass-kodam-polished-detail.jpg")
-          (dict "name" "Brass Kodam 15 Litre" "code" "BK-07" "capacity" "15 L" "capkey" "xlarge" "height" "34 cm" "diameter" "24 cm" "weight" "4.8 kg" "weightkey" "heavy" "shape" "wide" "use" "kumbabhishekam temple" "image" "/images/uploads/brass-kodam-no1-front.jpg")
-          (dict "name" "Brass Kodam 20 Litre" "code" "BK-08" "capacity" "20 L" "capkey" "xlarge" "height" "38 cm" "diameter" "28 cm" "weight" "6.2 kg" "weightkey" "heavy" "shape" "traditional" "use" "kumbabhishekam bulk" "image" "/images/uploads/brass-kodam-no3-side.jpg")
+          (dict "name" "Brass Kodam 1 Litre" "code" "BK-01" "capacity" "1 L" "capkey" "small" "height" "12 cm" "diameter" "10 cm" "weight" "0.6 kg" "weightkey" "light" "shape" "traditional" "use" "pooja home" "image" "/images/kodam/auto-1.svg")
+          (dict "name" "Brass Kodam 2 Litre" "code" "BK-02" "capacity" "2 L" "capkey" "medium" "height" "15 cm" "diameter" "12 cm" "weight" "0.9 kg" "weightkey" "light" "shape" "traditional" "use" "pooja home gift" "image" "/images/kodam/auto-2.svg")
+          (dict "name" "Brass Kodam 3 Litre" "code" "BK-03" "capacity" "3 L" "capkey" "medium" "height" "18 cm" "diameter" "14 cm" "weight" "1.4 kg" "weightkey" "medium" "shape" "wide" "use" "pooja temple" "image" "/images/kodam/auto-3.svg")
+          (dict "name" "Brass Kodam 5 Litre" "code" "BK-04" "capacity" "5 L" "capkey" "large" "height" "22 cm" "diameter" "16 cm" "weight" "2.1 kg" "weightkey" "medium" "shape" "traditional" "use" "temple kumbabhishekam" "image" "/images/kodam/auto-5.svg")
+          (dict "name" "Brass Kodam 7 Litre" "code" "BK-05" "capacity" "7 L" "capkey" "large" "height" "26 cm" "diameter" "18 cm" "weight" "2.8 kg" "weightkey" "medium" "shape" "wide" "use" "temple kumbabhishekam" "image" "/images/kodam/auto-7.svg")
+          (dict "name" "Brass Kodam 10 Litre" "code" "BK-06" "capacity" "10 L" "capkey" "xlarge" "height" "30 cm" "diameter" "20 cm" "weight" "3.6 kg" "weightkey" "heavy" "shape" "traditional" "use" "temple kumbabhishekam" "image" "/images/kodam/auto-10.svg")
+          (dict "name" "Brass Kodam 15 Litre" "code" "BK-07" "capacity" "15 L" "capkey" "xlarge" "height" "34 cm" "diameter" "24 cm" "weight" "4.8 kg" "weightkey" "heavy" "shape" "wide" "use" "kumbabhishekam temple" "image" "/images/kodam/auto-15.svg")
+          (dict "name" "Brass Kodam 20 Litre" "code" "BK-08" "capacity" "20 L" "capkey" "xlarge" "height" "38 cm" "diameter" "28 cm" "weight" "6.2 kg" "weightkey" "heavy" "shape" "traditional" "use" "kumbabhishekam bulk" "image" "/images/kodam/auto-20.svg")
         }}
         {{ range $products }}
         <article class="product-card" data-purpose="{{ .use }}" data-capacity="{{ .capkey }}" data-weight="{{ .weightkey }}" data-shape="{{ .shape }}" data-capacity-num="{{ strings.TrimSuffix " L" .capacity }}">
