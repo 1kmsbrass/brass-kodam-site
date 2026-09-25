@@ -1,4 +1,14 @@
+{{ if eq .RelPermalink "/brass-kodam/" }}
+<header class="catalog-header">
+  <a class="catalog-brand" href="/brass-kodam/"><strong>BRASSKUDAM.IN</strong><span>Brass Kodam Specialist</span></a>
+  <div class="catalog-search">⌕ <span>Search by size, capacity, weight or use...</span></div>
+  <a class="catalog-help" href="#chooser">Help Me Choose</a>
+  <a class="catalog-call" href="tel:{{ .Site.Params.phone }}">☎ Call</a>
+  <a class="catalog-wa" href="https://wa.me/{{ .Site.Params.whatsapp }}?text=Hi%2C%20I%27d%20like%20help%20choosing%20a%20brass%20kodam" target="_blank" rel="noopener">WhatsApp</a>
+</header>
+{{ else }}
 <header>
   <strong>BRASSKUDAM.IN</strong>
   <a class="phone-top" href="tel:{{ .Site.Params.phone }}">Call {{ .Site.Params.phone }}</a>
 </header>
+{{ end }}
