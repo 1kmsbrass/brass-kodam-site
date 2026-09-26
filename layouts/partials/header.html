@@ -19,6 +19,14 @@
   <form class="shared-search" action="/brass-kodam/" method="get">
     <span>⌕</span><input name="q" type="search" placeholder="Search BrassKudam by product, size, capacity or use..." aria-label="Search BrassKudam">
   </form>
-  <a class="shared-filter" href="/brass-kodam/">FILTER</a>
+  <button class="shared-filter" id="sharedMenuButton" type="button">MENU</button>
 </div>
+{{ end }}
+{{ if ne .RelPermalink "/brass-kodam/" }}
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  const b=document.getElementById("sharedMenuButton"),s=document.querySelector(".site-sidebar");
+  if(b&&s)b.addEventListener("click",function(){s.classList.toggle("mobile-open");b.textContent=s.classList.contains("mobile-open")?"CLOSE":"MENU"});
+});
+</script>
 {{ end }}
