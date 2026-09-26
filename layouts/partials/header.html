@@ -1,11 +1,24 @@
-{{ if eq .RelPermalink "/brass-kodam/" }}
-<header class="catalog-header">
-  <a class="catalog-brand" href="/brass-kodam/"><strong>BRASSKUDAM.IN</strong><span>Brass Kodam Specialist</span></a>
-  <a class="catalog-wa" href="https://wa.me/{{ .Site.Params.whatsapp }}?text=Hi%2C%20I%27d%20like%20help%20choosing%20a%20brass%20kodam" target="_blank" rel="noopener">WhatsApp</a>
+<header class="site-header {{ if eq .RelPermalink "/brass-kodam/" }}catalog-header{{ end }}">
+  <a class="site-brand" href="/brass-kodam/"><strong>BRASSKUDAM.IN</strong><span>Brass Kodam Specialist</span></a>
+  <div class="site-contact">
+    <strong>+91 98940 55337</strong>
+    <span><a href="tel:{{ .Site.Params.phone }}">Call</a><span> · </span><a href="https://wa.me/{{ .Site.Params.whatsapp }}?text=Hi%2C%20I%27d%20like%20help%20with%20brass%20kodam" target="_blank" rel="noopener">WhatsApp</a></span>
+  </div>
 </header>
-{{ else }}
-<header>
-  <strong>BRASSKUDAM.IN</strong>
-  <a class="phone-top" href="tel:{{ .Site.Params.phone }}">Call {{ .Site.Params.phone }}</a>
-</header>
+{{ if ne .RelPermalink "/brass-kodam/" }}
+<div class="shared-nav">
+  <div class="shared-current">
+    <label>CURRENT SECTION</label>
+    <select onchange="if(this.value) location.href=this.value">
+      <option value="/brass-kodam/"{{ if eq .Section "products" }} selected{{ end }}>BRASS KODAM</option>
+      <option value="/products/">BRASS SOMBU &amp; RELATED PRODUCTS</option>
+      <option value="/kumbabhishekam-packages/">KUMBABHISHEKAM</option>
+      <option value="/blog/"{{ if eq .Section "blog" }} selected{{ end }}>GUIDES</option>
+    </select>
+  </div>
+  <form class="shared-search" action="/brass-kodam/" method="get">
+    <span>⌕</span><input name="q" type="search" placeholder="Search BrassKudam by product, size, capacity or use..." aria-label="Search BrassKudam">
+  </form>
+  <a class="shared-filter" href="/brass-kodam/">FILTER</a>
+</div>
 {{ end }}
