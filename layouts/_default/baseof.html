@@ -3,11 +3,20 @@
 <head>
 {{ partial "head.html" . }}
 </head>
-<body class="{{ if eq .RelPermalink "/brass-kodam/" }}catalog-page{{ end }}">
+<body class="{{ if eq .RelPermalink "/brass-kodam/" }}catalog-page{{ else }}standard-page{{ end }}">
 {{ partial "header.html" . }}
+{{ if eq .RelPermalink "/brass-kodam/" }}
 <main>
 {{ block "main" . }}{{ end }}
 </main>
+{{ else }}
+<div class="site-shell">
+{{ partial "site-sidebar.html" . }}
+<main class="site-content">
+{{ block "main" . }}{{ end }}
+</main>
+</div>
+{{ end }}
 {{ partial "footer.html" . }}
 {{ partial "whatsapp.html" . }}
 </body>
