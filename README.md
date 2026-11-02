@@ -49,3 +49,8 @@ In the markdown body, on its own line:
 ## Before your first real post
 - Replace placeholder phone/email/city in `hugo.toml` `[params]`.
 - Replace `baseURL` in `hugo.toml` with your `.pages.dev` URL.
+
+
+## Repository documentation rule
+
+Follow the [repository documentation linking rule](.github/REPOSITORY-DOCUMENTATION-RULE.md). Substantive documentation must be compared with existing files and include direct links to meaningfully related documents.
